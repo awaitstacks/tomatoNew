@@ -4,9 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
 import PlaceOrder from "./pages/Place order/PlaceOrder.jsx";
-import Footer from "./components/Footer/Footer";
-import LoginPopup from "./components/LoginPopup/LoginPopup";
-import Verify from "./pages/verify/verify";
+import Footer from "./components/Footer/Footer.jsx";
+import LoginPopup from "./components/LoginPopup/LoginPopup.jsx";
+import Verify from "./pages/verify/Verify.jsx";
 import MyOrders from "./pages/MyOrders/MyOrders.jsx";
 
 const App = () => {
