@@ -1,6 +1,6 @@
 import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import validator from "validator";
 
 //Login user
@@ -11,7 +11,7 @@ const loginUser = async (req, res) => {
     if (!user) {
       return res.json({
         success: false,
-        messaage: "User doesn't exists",
+        message: "User doesn't exists",
       });
     }
     const isMatch = await bcrypt.compare(password, user.password);
