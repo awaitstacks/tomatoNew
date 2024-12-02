@@ -5,7 +5,10 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //Placing order from front-end
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5173";
+  // const frontend_url = "http://localhost:5173";
+  const frontend_url =
+    "https://c93d-2401-4900-6078-80ed-bc7a-cac3-e107-6387.ngrok-free.app/";
+
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
